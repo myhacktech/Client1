@@ -14,7 +14,7 @@ const NoteState = (props) => {
   //fetch user Name
   const fetchData =  async() => {
     try {
-      const response = await fetch("https://backend1-orcin.vercel.app/api/auth/getuser", {
+      const response = await fetch("https://backend1-orcin.vercel.app/api/auth/fetchuser", {
         method: "POST",
         headers: {
           "auth-token": Cookies.get('authtoken'),
